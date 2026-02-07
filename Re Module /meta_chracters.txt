@@ -1,0 +1,16 @@
+All meta characters -> . ^ $ * + ? { } [ ] \ | ( )
+. -> Any chracter except new line character
+ ^ starts with (ex : "^hello")
+ $ -> Ends with (ex : world$)
+ [] -> set of characters 
+ \ -> special sequence (or escape sepcial sequence) ex : "\d"
+
+more special characters:
+\d = matches any decimal digit ; [0-9].
+\D = matches any non digit character.
+\s = Matces any whitespace character ; (space " " tab '\t' newline '\n' )
+\S = matches any non whitespace characters
+\w = matches any alphanumeric(word) character; [a-zA-Z0-9_]
+\W = matches any non alphanumeric character;
+\b = Returns a match where the specified characters are at the beginning or at the end of a word or block r"\bain" r"ain\b"
+\B Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word r"\Bain" r"ain\B"
