@@ -13,5 +13,4 @@ root = Tk()
 button = Button(root, text='To Open', command=openfile)
 button.pack()
 
-
 root.mainloop()
